@@ -16,7 +16,7 @@ public class SendRequestGatewayImpl implements SendRequestGateway {
     @Override
     public void sendRequestProducer(Request request) {
         amqpTemplate.convertAndSend(
-                RabbitMqConstants.STOCK_REQUESTS,
+                RabbitMqConstants.REQUESTS,
                 request
         );
     }
