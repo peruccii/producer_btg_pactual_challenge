@@ -16,9 +16,12 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "quantity")
     private Integer quantity;
 
+    @Column(name = "price")
     private BigDecimal price;
 }
