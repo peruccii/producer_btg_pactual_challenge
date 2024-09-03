@@ -35,7 +35,7 @@ public class RabbitMqConfig {
     @PostConstruct
     private void add() {
         Object RabbitMQConstants;
-        Queue stockQueue =  this.queue(RabbitMqConstants.STOCK_REQUESTS);
+        Queue stockQueue =  this.queue(RabbitMqConstants.REQUESTS);
 
         DirectExchange direct = this.directExchange();
 
